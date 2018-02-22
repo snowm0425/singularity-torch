@@ -21,6 +21,7 @@ echo "This section happens once after bootstrap to build the image."
 %chmod u+x /code/rawr.sh
   
 apt-get install git
-git clone https://github.com/torch/distro.git ~/torch --recursive
-cd ~/torch; bash install-deps;
+mkdir -p /torch
+git clone https://github.com/torch/distro.git /torch --recursive
+cd /torch; bash install-deps;
 ./install.sh
