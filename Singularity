@@ -20,8 +20,8 @@ mkdir -p /code
 echo "RoooAAAAR" >> /code/rawr.sh
 chmod u+x /code/rawr.sh
   
-apt-get install git
+apt-get install -y git
 mkdir -p /torch
 git clone https://github.com/torch/distro.git /torch --recursive
 cd /torch; bash install-deps;
-./install.sh
+sh /install.sh
